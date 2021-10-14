@@ -1,0 +1,43 @@
+body {
+    font-size: 16px;
+    text-align: center;
+    background-color:darkred;
+    border-style:double;
+}
+
+.pop {
+    color: darkslateblue;
+    font-size: 20px;
+    font-style:inherit;
+    text-decoration: underline;
+}
+
+.headerBg {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    border: #0f0f12 outset 2px;
+    border-radius: 15px;
+    height: 500px;
+    width: 100%;
+}
+
+#image {
+    height: 130px;
+    margin: 5px 5px 0 5px;
+    border: #0f0f12 outset 2px;
+    border-radius: 15px;
+    background: url(wandIcon.png);
+}
+
+.text {
+    background-color: linen;
+    border: #0f0f12 outset 2px;
+    border-radius: 15px;
+    color: darkslategrey;
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+
+

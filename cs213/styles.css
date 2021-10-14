@@ -1,0 +1,11 @@
+body {
+    background-color: darkseagreen;
+    border-style: double;
+}
+p {
+    color: rgb(129, 97, 14);
+}
+
+.dark-text {
+    color:darkslategrey;
+}

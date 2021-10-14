@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style> /* Internal Stylesheet */
+        body {
+            cursor: crosshair;
+         font-family: Arial, Helvetica, sans-serif;
+         scroll-behavior: smooth;
+         padding: 20px; }
+         h1 {
+             background-color: rgb(17, 39, 3);
+             font-size: 25px;
+             color: goldenrod;
+         }
+      </style>
+      <link rel="stylesheet" href="tutoringStyle.css">
+      <!--External Stylesheet-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Math Tutoring</title>
+</head>
+<body>
+    <div class="document">
+        <div id="title">
+            <header>
+            <h1>
+                Setting up an appointment
+            </h1>
+            </header>
+        </div>
+        <!--title-->
+        <div id="image"></div>
+        <br>
+        <!--image-->
+        <div class="text">
+            <h3>Get to Know You Form</h3>
+            <form action="/action_page.php" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <!--name-->
+                <label for="day">What day works best for you?</label><br>
+                <input type="checkbox" id="day" name="day" value="sunday">
+                <label for="day"> Sundays</label><br>
+                <input type="checkbox" id="day1" name="day1" value="monday">
+                <label for="day1"> Mondays</label><br>
+                <input type="checkbox" id="day2" name="day2" value="tuesday">
+                <label for="day2"> Tuesdays</label><br>
+                <input type="checkbox" id="day3" name="day3" value="wednesday">
+                <label for="day3"> Wednesdays</label><br>
+                <input type="checkbox" id="day4" name="day4" value="thursday">
+                <label for="day4"> Thursdays</label><br>
+                <input type="checkbox" id="day5" name="day5" value="friday">
+                <label for="day5"> Fridays</label><br>
+                <input type="checkbox" id="day6" name="day6" value="saturday">
+                <label for="day6"> Saturdays</label><br>
+                <!--checkboxs-->
+                <p style="color: black;">Please select your Math Class:</p>
+                  <input type="radio" id="100" name="math_class" value="100">
+                  <label for="100">Math 100</label><br>
+                  <input type="radio" id="108" name="math_class" value="108">
+                  <label for="108">Math 108</label><br>
+                  <input type="radio" id="109" name="math_class" value="109">
+                  <label for="109">Math 109</label><br>
+                  <input type="radio" id="112" name="math_class" value="112">
+                  <label for="112">Math 112</label><br><br>
+                <!--radio-->
+                <label for="meet">Choose how to meet:</label>
+                <select name="meet" id="meet">
+                  <option value="Mckay">Mckay Library</option>
+                  <option value="MC">MC Crossroads</option>
+                  <option value="online">Zoom Online</option>
+                  <option value="other">Other</option>
+                </select><br><br>
+                <!--menu-->
+                <textarea id="comments" name="comments">Anything else you want us to know?</textarea><br><br>
+                <!--review-->
+                <input type="submit" value="Submit"><br><br>
+                <!--submit button-->
+              </form>
+        </div>
+        <!--form-->
+    </div>
+    <!--document-->
+    <br>
+    <hr>
+    <footer>
+        <a href="assign04.html">Home</a>
+        <p>Contact: <a href="mailto:mkpalm2006@gmail.com">mkpalm2006@gmail.com</a></p><br>
+    </footer>
+    <!--end-->
+</body>
+</html>

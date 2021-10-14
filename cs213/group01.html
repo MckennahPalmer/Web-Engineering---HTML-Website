@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style> /* #0 */
+	   body { font-size:36px;
+      background-color: gray; 
+      border-style: groove;
+      font-family: fantasy;
+      padding: 10px; }
+      
+      blockquote {
+        max-width: 250px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px; }
+	</style>
+    <style> /* #1 */
+	   body { font-size:16px; 
+      background-color: rgba(207, 181, 31, 0.808);
+      border-style: solid;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 20px; }
+            
+      blockquote {
+        max-width: 350px;
+        text-align: center;
+        margin: 20px;
+        padding: 20px; }
+	</style>
+    <style> /* #2 */
+	   body { font-size:12px;
+      background-color: green;
+      border-style: ridge; 
+      font-family: sans-serif;
+      padding: 30px; }
+            
+      blockquote {
+        max-width: 450px;
+        text-align: center;
+        margin: 30px;
+        padding: 30px; }
+	</style>
+    <style> /* #3 */
+	   body { font-size:8px;
+      background-color: beige;
+      border-style: double; 
+      font-family: cursive;
+      padding: 40px; }
+            
+      blockquote {
+        max-width: 550px;
+        text-align: center;
+        margin: 40px;
+        padding: 40px; }
+	</style>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Week 03 : CSS</title>
+   </head>
+   <body onload="disableStyles()">
+      <div class="document">
+        <div id="title">
+          <h1>Week 03 : CSS</h1>
+          <blockquote style="text-align:center; font-family:fantasy">
+            <p>
+                "Happiness can be found, even in the darkest of times,
+                if one only remembers to turn on the light."
+                — Harry Potter and the Prisoner of Azkaban
+            </p>
+          </blockquote>
+          <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+        </div> <!--title -->
+        <div class="content">
+          <div id="menuBar">
+            <ul id="menuBarList">
+              <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+              <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+              <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+              <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+              <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+            </ul>
+          </div> <!-- menuBar -->
+          <div id="text">
+            <h1>Select the Stylesheet</h1>
+            <p>There are four stylesheets that you may select from. Each one will change the coloring, fonts, 
+            		and even the layout of the page.You can change the layout of this page by selecting different 
+                    stylesheets in the menu, or by selecting one of the following links:<br>
+              <a href="#" onclick="applyStyle(0)">Stylesheet 1</a>,
+              <a href="#" onclick="applyStyle(1)">Stylesheet 2</a>,
+              <a href="#" onclick="applyStyle(2)">Stylesheet 3</a>,
+              <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>.
+            </p>
+             <h1>Instructions</h1>
+            <p>All the stylesheets have a different background color, text size, font family, 
+              border-style, amount of padding, and blockquote parameters. The first stylesheet is 
+              a grey background, grooved border, fantasy font, 10px padding, and the smallest dimemsions
+              for a blockquote. The second stylesheet is a yellowish background, solid border, Times New Roman
+              font, 20px padding, and slightly larger dimemsions for the blockquote. The third stylesheet is 
+              a green background, ridge border, sans serif font, 30px padding, and slightly larger dimemsions
+              for the blockquote. The fourth stylesheet is beige background, double border, cursive
+              font 30px padding, and the largest dimemsions for the blockquote.</p>
+         </div> <!-- text -->
+         <div id="sidebar">
+           <h3>Grading</h3>
+           <p>I was the only one working on this project. I tried to get in contact with my partner,
+             but he never responded or even touched the group discussion. I did my best to work on our
+             project, and I got some help from my younger brother. Who for some reason has a way better
+             website created than me. All his webpage show a different design and style, so I asked for 
+             some tips. So the fourth stylesheet is dedicated to him because he liked the beige color and 
+             the double border.
+           </p>
+          </div> <!--sidebar -->
+        </div> <!-- content -->
+        <div id="bottom">I submitted this assignment by the 2nd of October</div>
+      </div> <!-- document -->
+      
+      <script>
+	    <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+	    function disableStyles() 
+		{
+		  document.styleSheets[0].disabled = true;
+		  document.styleSheets[1].disabled = true;
+		  document.styleSheets[2].disabled = true;
+		  document.styleSheets[3].disabled = true;
+		}
+		<!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+		function applyStyle(i)
+		{
+			disableStyles();
+			document.styleSheets[i].disabled = false;
+		}
+	  </script>
+   </body>
+</html>

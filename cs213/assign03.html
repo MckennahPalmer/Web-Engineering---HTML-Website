@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style> /* Internal Stylesheet */
+    body { font: size 16px; 
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     padding: 25px; }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <!--External Stylesheet-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mckennah Palmer's Home Page 3.0</title>
+</head>
+<body>
+  <div class="document">
+    <div id="title">
+      <header>
+        <h1 style="color: green; font-family:'Times New Roman', Times, serif">
+          Welcome to Mckennah Palmer's Home Page
+        </h1>
+      </header>
+    </div>
+    <!--title-->
+    <br>
+    <p>
+      <a href="#end">End</a><br>
+    </p>
+    <br>
+    <div class="content">
+      <div id = "image">
+        <p>
+          <img src="Foxtrot.jpeg" alt="a funny comic" width="600">
+        </p>
+      </div>
+      <!--image-->
+      <br>
+      <div id = "text">
+        <h3 class="dark-text">
+          Hi!
+        </h3>
+        <h3 class="dark-text">
+          My name is <b>Mckennah Palmer</b>, and I come from Eagle Mountain, Utah.
+        </h3>
+        <h3 class="dark-text">
+          I am a Software Engneering Major with a Minor in English.
+        </h3>
+        <h3 class="dark-text">
+          You are on my Home Page!
+        </h3>
+        <a href="https://en.wikipedia.org/wiki/FoxTrot"><img src="quincy.jpeg" alt="link to comics" style="width:42px;height:42px;"></a>
+        <div id = "quote">
+          <blockquote style="text-align: center; font-family:fantasy">
+            <p>
+                "Happiness can be found, even in the darkest of times,
+                if one only remembers to turn on the light."
+                — Harry Potter and the Prisoner of Azkaban
+            </p></blockquote>
+        </div>
+        <!--quote-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id = "table">
+          <table style="margin-left:auto; margin-right:auto; border: darkslategrey 1px solid">
+            <tr style="border: darkslategrey 1px solid">
+              <th style="border: darkslategrey 1px solid">Course Number</th>
+              <th style="border: darkslategrey 1px solid">Course Description</th>
+              <th style="border: darkslategrey 1px solid">Section Number</th>
+              <th style="border: darkslategrey 1px solid">Class Time</th>
+              <th style="border: darkslategrey 1px solid">Class Location</th>
+            </tr>
+            <tr>
+                <th>COMM 111</th>
+                <th>Writing for Communication Career</th>
+                <th>Section 7</th>
+                <th>5-6pm</th>
+                <th>Spori</th>
+            </tr>
+            <tr>
+                <th>CS 213</th>
+                <th>Web Engineering 1</th>
+                <th>Section 4</th>
+                <th>Online</th>
+                <th>Home</th>
+            </tr>
+            <tr>
+                <th>ENG 218</th>
+                <th>Creative Writing</th>
+                <th>Section 4</th>
+                <th>9:45-11:15am</th>
+                <th>Clark</th>
+            </tr>
+            <tr>
+                <th>MATH 335</th>
+                <th>Data Wrangling & Visualization</th>
+                <th>Section 4</th>
+                <th>8-9:30am</th>
+                <th>Hinckley</th>
+            </tr>
+            <tr>
+                <th>REL 225C</th>
+                <th>Foundations of the Restoration</th>
+                <th>Section 30</th>
+                <th>12:45-1:45pm</th>
+                <th>Taylor</th>
+            </tr>
+          </table><br>
+        </div>
+        <hr>
+        <!--table-->
+        <div id = "form" style="border: darkslateblue; border-style: ridge;">
+          <form action="/action_page.php" method="get" style="background-color: lightgoldenrodyellow;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <!--name-->
+            <label for="pet">Do you have a pet?</label><br>
+            <input type="checkbox" id="pet1" name="pet1" value="none">
+            <label for="pet1"> I have no pets</label><br>
+            <input type="checkbox" id="pet2" name="pet2" value="dog">
+            <label for="pet2"> I have a Dog</label><br>
+            <input type="checkbox" id="pet3" name="pet3" value="cat">
+            <label for="pet3"> I have a cat</label><br>
+            <input type="checkbox" id="pet4" name="pet4" value="other">
+            <label for="other"> Other</label><br>
+            <!--checkboxs-->
+            <p style="color: black;">Please select your favorite BYU School:</p>
+              <input type="radio" id="idaho" name="fav_school" value="Idaho">
+              <label for="idaho">BYU Idaho</label><br>
+              <input type="radio" id="provo" name="fav_school" value="Provo">
+              <label for="provo">BYU Provo</label><br>
+              <input type="radio" id="hawaii" name="fav_school" value="Hawaii">
+              <label for="hawaii">BYU Hawaii</label><br><br>
+            <!--radio-->
+            <label for="code">Choose a language:</label>
+            <select name="code" id="code">
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="python">Python</option>
+              <option value="javascript">Javascript</option>
+            </select><br><br>
+            <!--menu-->
+            <textarea id="review" name="review">Leave a Review!</textarea><br><br>
+            <!--review-->
+            <input type="submit" value="Submit"><br>
+            <!--submit button-->
+          </form>
+        </div>
+        <!--form-->
+      </div>
+      <!--text-->
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+      <div id = "end">
+        <footer>
+          <p>
+            <p>Author: Mckennah Palmer</p>
+            <p><a href="mailto:mkpalm2006@gmail.com">mkpalm2006@gmail.com</a></p>
+            <a href="https://byui.instructure.com/">I-Learn</a><br><br>
+            <a href="../index.html">CS 213 Assignments</a><br><br>
+            <a href="#title">Top</a>
+          </p>
+        </footer>
+      </div>
+      <!--end-->
+      <br>
+      <br>
+    </div>
+    <!--content-->
+  </div>
+  <!--document-->
+</body>
+</html>
