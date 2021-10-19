@@ -1,0 +1,50 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+    
+html, body, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+img {
+    max-width: 600px;
+    height: auto;
+}
+    
+body {
+    line-height: 1;
+}
+    
+p {
+    font-size:25px;
+    color:rgb(102, 22, 102);
+    text-align: center;
+}
+    
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+.item {
+    margin: 5px;
+}
+    
