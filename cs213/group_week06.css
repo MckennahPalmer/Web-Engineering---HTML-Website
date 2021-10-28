@@ -1,0 +1,159 @@
+#flex_first {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1rem;
+}
+
+#flex_first.green_round {
+    display: flex;
+    justify-content: center;
+}
+
+#flex_second {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: stretch;
+	flex-basis: auto;
+}
+
+#name {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+#address {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+#phone {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+#email {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+#color {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+#hair {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+}
+
+#form_row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+#cookie {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+}
+
+@media only screen and (min-width: 500px) {
+    #grid_first {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #grid_first {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #grid_first {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #grid_second {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        height: 100px;
+    }
+    #box9 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #grid_second {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        height: 100px;
+    }
+    #box1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 2fr;
+        gap: 1rem;
+        height: 100px;
+    }
+    #box9 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #grid_second {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        height: 100px;
+    }
+    #box1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 2fr;
+        gap: 1rem;
+        height: 100px;
+    }
+    #box9 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1rem;
+        height: 100px;
+    }
+}

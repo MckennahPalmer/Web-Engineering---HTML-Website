@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Academics" content="This is the Academics page for MACU! 
+	Come and see some of our amazing students and their research!">
+	<title>Academics</title>
+	
+	<link rel="stylesheet" type="text/css" href="school.css">
+	
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		
+		body {
+			margin: 0;
+			font-size: 62.5%;
+            background-color: rgb(37, 37, 37);
+            color: grey;
+		}
+		
+		ul {
+			padding-left: 0;
+		}
+		
+		/**************************************/
+		
+		.green_round {
+			border: 2px solid rgb(3, 71, 3);
+			border-radius: 0.5rem;
+			background-color: rgb(3, 71, 3);
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin: 1rem;
+			padding: 1rem;
+		}
+
+        .light_green_round {
+            border: 2px solid rgb(3, 71, 3);
+			border-radius: 0.5rem;
+			background-color: rgb(15, 105, 15);
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin: 1rem;
+			padding: 1rem;
+        }
+		
+		.white_rounded {
+			border: 2px solid #557080;
+			border-radius: 0.5rem;
+			background-color: #fff;
+			font-size: 1.2rem;
+			font-weight: bold;
+			padding: 1rem;
+			width: 100%;
+		}
+		
+		/**************************************/
+		
+		.center_list {
+			width:auto;
+            display: flex;
+            flex-direction: column;
+			list-style-position: inside;
+		}
+		
+		/**************************************/
+		
+		#flex_second_wrapper{
+			list-style-type: none;
+		}
+		
+		.form-row,
+		.form-row > * {
+			padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+		}
+		
+		.form-row > fieldset {
+			background-color: #fff;
+		}
+		
+		.form-row > button {
+			width:auto;
+			margin: 0.5rem;
+		}
+		
+		/**************************************/
+		
+		.placeholder_image {
+            height: 130px;
+            margin: 5px 5px 0 5px;
+            border: #0f0f12 outset 2px;
+            border-radius: 15px;
+            background: url(MathHeader.jpg);
+		}
+		
+		/**************************************/
+		
+		.flex_div {
+			color: #fff;
+		}
+	</style>
+</head>
+<body class="wrapperOne">
+	<section id="flex_first" class="green_round image">
+        <div id="logo"></div>
+    </section>
+
+	<section class="green_round header">
+		<div class="center_list white_rounded">
+			<p style="font-family: Impact; font-size: 25mm; text-align: center;" >Welcome! </p>
+			<p style="font-family:fantasy; font-size: 10mm; text-align: center; background-color:rgb(3, 71, 3);" > MACU - Mckennah University</p>
+		</div>
+	</section>
+	
+	<section id="flex_second" class="green_round sidebar">
+		<form action="input">
+			<ul id="flex_second_wrapper">
+				<li class="form-row">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name">
+				</li>
+				<li class="form-row">
+					<label for="address">Address</label>
+					<textarea name="address" id="address" rows="5" cols="25"></textarea>
+				</li>
+				<li class="form-row">
+					<label for="phone">Phone Number</label>
+					<input type="tel" name="phone" id="phone">
+				</li>
+				<li class="form-row">
+					<label for="email">Email Address</label>
+					<input type="email" name="email" id="email">
+				</li>
+				<li class="form-row">
+					<label for="year">Year in College</label>
+					<select name="year" id="year">
+						<option value="freshman">Freshman</option>
+						<option value="Sophmore">Sophmore</option>
+						<option value="junior">Junior</option>
+						<option value="Senior">Senior</option>
+					</select>
+				</li>
+				<li class="form-row">
+					<label>Perferred form of Contact</label>
+					<fieldset name="comm">
+						<label> <input type="radio" name="comm" value="inperson"> Inperson </label>
+						<label> <input type="radio" name="comm" value="letter"> Letter </label>
+						<label> <input type="radio" name="comm" value="email"> Email </label>
+						<label> <input type="radio" name="comm" value="phone"> Phone </label>
+					</fieldset>
+				</li>
+				<li class="form-row">
+					<label>Living Area</label>
+					<fieldset name="house">
+						<label> <input type="checkbox" name="house" value="oncampus"> Oncampus </label>
+						<label> <input type="checkbox" name="house" value="offcampus"> Offcampus </label>
+						<label> <input type="checkbox" name="house" value="online"> Online </label>
+					</fieldset>
+				</li>
+				<li class="form-row">
+					<button class="white_rounded" type="reset">Reset</button>
+					<button class="white_rounded" type="submit">Submit</button>
+				</li>
+			</ul>
+		</form>
+	</section>
+	
+	<section id="grid_first" class="green_round content">
+		<article class="example_article white_rounded">
+			<div class="placeholder_image"></div>
+			<h2>Majors, Academics, and research</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ornare felis, luctus hendrerit tellus. Curabitur hendrerit ante ac dolor viverra blandit. Curabitur venenatis, magna non condimentum ornare, metus urna porttitor purus, id tristique dui
+				tellus sed est.
+			</p>
+		</article>
+		<article class="example_article white_rounded">
+			<div class="placeholder_image"></div>
+			<h2>Software engineering HTML Bootcamp</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ornare felis, luctus hendrerit tellus.
+			</p>
+		</article>
+		<article class="example_article white_rounded">
+			<div class="placeholder_image"></div>
+			<h2>Hack-A-Thon</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+		</article>
+		<article class="example_article white_rounded">
+			<div class="placeholder_image"></div>
+			<h2>Nursing program developments</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ornare felis, luctus hendrerit tellus. Curabitur hendrerit ante ac dolor viverra blandit. Curabitur venenatis, magna non condimentum ornare, metus urna porttitor purus, id tristique dui
+				tellus sed est.
+			</p>
+		</article>
+		<article class="example_article white_rounded">
+			<div class="placeholder_image"></div>
+			<h2>Mathmaticians Assemble!</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ornare felis, luctus hendrerit tellus. Curabitur hendrerit ante ac dolor viverra blandit.
+			</p>
+		</article>
+		<article class="example_article white_rounded">
+			<div class="placeholder_image"></div>
+			<h2>Academics Offered</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+		</article>
+		<article class="example_article white_rounded">
+			<div class="placeholder_image"></div>
+			<h2>The Theater's dramatic Debut</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ornare felis, luctus hendrerit tellus. Curabitur hendrerit ante ac dolor viverra blandit. Curabitur venenatis, magna non condimentum ornare, metus urna porttitor purus, id tristique dui
+				tellus sed est.
+			</p>
+		</article>
+		<article class="example_article white_rounded">
+			<div class="placeholder_image"></div>
+			<h2>Sports Careers</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ornare felis, luctus hendrerit tellus.
+			</p>
+		</article>
+	</section>
+	
+	<section id="grid_second" class="green_round footer">
+		<div class="box1 item1 white_rounded">Generals</div>
+		<div class="box2 item2 white_rounded">Computer Science</div>
+		<div class="box3 item3 white_rounded">Theater</div>
+		<div class="box4 item4 white_rounded">Nursing</div>
+		<div class="box5 item5 white_rounded">Software Engineer</div>
+		<div class="box6 item6 white_rounded">Math</div>
+		<div class="box7 item7 white_rounded">English</div>
+		<div class="box8 item8 white_rounded">Stem</div>
+		<div class="box9 item9 white_rounded">
+			<div class="flex_div light_green_round"><a href="./assign06-University.html">Home</a></div>
+			<div class="flex_div light_green_round"><a href="./assign06-Athletics.html">Athletics</a></div>
+			<div class="flex_div light_green_round"><a href="./assign06-Arts.html">Arts</a></div>
+			<div class="flex_div light_green_round"><a href="../index.html">CS 213</a></div>
+		</div>
+	</section>
+</body>
+</html>
